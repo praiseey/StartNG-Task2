@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Praise Inua - CV</title>
+    <title>Document</title>
 
     <style>
         body {
@@ -60,6 +60,51 @@
         }
         .my-table td {
             border: 5px solid white;
+        }
+        .contact-form {
+            width: 40%;
+            margin: auto;
+            padding-bottom: 20px;
+            height: 500px;
+            border-radius: 5px;
+            border: 1px solid rgb(222, 238, 252);
+        
+        }
+
+        .contact-info {
+            margin: 20px 10px;
+            
+        }
+        .heading {
+            color: rgb(57, 57, 99);
+        }
+
+        .text-label {
+            text-align: left;
+            display: inline-block;
+            width: 20%;
+            padding: 5px;
+            vertical-align: top;
+            margin-top: 20px;
+        }
+
+        .text-field {
+            display: inline-block;
+            text-align: left;
+            width: 55%;
+            vertical-align: middle;
+            margin-top: 25px;
+            cursor: progress;
+        }
+
+        button {
+            margin-top: 35px;
+            margin-bottom: 30px;
+            width: 25%;
+            background-color: rgb(57, 57, 99);
+            color: #ffffff;
+            height: 40px;
+            border-radius: 10px;
         }
         
     </style>
@@ -182,6 +227,40 @@
                 <span><strong>West African School Certificate Examination</strong></span>
                 <span style="margin-left: 26px;"><em>2011</em></span>
                 <p style="padding-bottom: 35px;">The Royal Integrated College, Calabar, Cross River State.</p>
+            </div>
+
+            <div class="contact-form">
+                <h3 class="contact-info heading">CONTACT ME</h3>
+                <h4 class="contact-info heading">Kindly fill in your details below</h4> 
+                <form action="https://formspree.io/praisepaul634@gmail.com" method="POST" class="contact-info">
+                    <div>
+                        <input type="hidden" name="_subject" value="Website Contact">
+                        <input type="hidden" name="_next" value="https://praiseey.github.io/StartNG-Task2/">
+                    </div>
+                    <div>
+                        <input type="text" name="_gotcha" style="display: none">
+                    </div>
+                    <div>
+                        <label class="text-label">Title:</label>
+                        <input type="text" name="emailsubject" class="text-field" autofocus>
+                    </div>
+                    <div>
+                        <label class="text-label">Name:</label>
+                        <input type="text" name="name required autofocus placeholder="Your name" minlength="4" class="text-field">
+                    </div>
+    
+                    <div>
+                        <label class="text-label">Email Address:</label>
+                        <input type="text" name="_replyto" required autofocus placeholder="Your Email Address" class="text-field">
+                    </div>
+    
+                    <div>
+                        <label class="text-label">Message:</label>
+                        <textarea name="message" class="text-field" rows="4" cols="50" minlength="20" required autofocus placeholder="Type your message here..."></textarea>
+                    </div>
+    
+                    <button type="submit" value="Send">Send Message</button>
+                </form>
             </div>
     </div>
 </body>
